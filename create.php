@@ -59,7 +59,7 @@
           $stmt->bindParam(':price', $price);
 
           // specify when this record was inserted to the database
-          $created=date('Y-m-d H:i:S');
+          $created=date_default_timezone_set('America/Sao_Paulo');
           $stmt->bindParam(':created', $created);
 
           // Execute the query
